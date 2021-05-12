@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreatingAccountActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/iv_tint_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#66474747" />
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/thin"
+                android:text="Create account"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="45sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#B3303030"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/et_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/ic_nickname"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#D1D1D1"
+                            android:fontFamily="@font/thin"
+                            android:hint="Username"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <TextView
+                    android:id="@+id/tv_error_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/regular1"
+                    android:textColor="#E40E0E"
+                    app:layout_constraintStart_toStartOf="@+id/cv_username"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_username" />
+
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cv_username">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#B3303030"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/et_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/ic_baseline_person_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#D1D1D1"
+                            android:fontFamily="@font/thin"
+                            android:hint="Login"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <TextView
+                    android:id="@+id/tv_error_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/regular1"
+                    android:textColor="#E40E0E"
+                    app:layout_constraintStart_toStartOf="@+id/cv_login"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_login" />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_error_login">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#B3303030"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/ic_baseline_lock_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#D1D1D1"
+                            android:fontFamily="@font/thin"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/tv_error_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular1"
+                    android:textColor="#E40E0E"
+                    app:layout_constraintStart_toStartOf="@+id/cv_password"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_password" />
+
+
+                <Button
+                    android:id="@+id/btn_create_account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_bg"
+                    android:clickable="true"
+                    android:fontFamily="@font/regular1"
+                    android:padding="10dp"
+                    android:text="Create"
+                    android:textColor="#CDCDCD"
+                    app:layout_constraintEnd_toEndOf="@+id/cv_password"
+                    app:layout_constraintStart_toStartOf="@+id/cv_password"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_error_password" />
+
+                <TextView
+                    android:id="@+id/tv_or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@android:color/transparent"
+                    android:text="--- OR ---"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_create_account" />
+
+                <Button
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg"
+                    android:clickable="true"
+                    android:fontFamily="@font/regular1"
+                    android:padding="10dp"
+                    android:text="Sign in"
+                    android:textColor="#CDCDCD"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_create_account"
+                    app:layout_constraintStart_toStartOf="@+id/btn_create_account"
+                    app:layout_constraintTop_toBottomOf="@id/tv_or" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,5 @@
 package mlita.authapp.activities
 
-import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +10,12 @@ import mlita.authapp.database.User
 import mlita.authapp.databinding.ActivityCreatingAccountBinding
 import java.math.BigInteger
 import java.time.LocalTime
+import android.os.Bundle
+import android.os.Build
+
+
+import android.view.WindowManager
+
 import kotlin.math.pow
 
 class CreatingAccountActivity: AppCompatActivity() {
@@ -46,7 +51,14 @@ class CreatingAccountActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCreatingAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        );
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            window.attributes.layoutInDisplayCutoutMode =
+                WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+        }
 
         binding.btnCreateAccount.setOnClickListener {
             createAccount()

@@ -13,6 +13,9 @@ import mlita.authapp.databinding.ActivityMainBinding
 import java.math.BigInteger
 import java.time.LocalTime
 import kotlin.math.pow
+import android.view.WindowManager
+import android.os.Build
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -45,12 +48,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val dao = AuthDatabase.getInstance(this).authDao
-
-
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        );
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            window.attributes.layoutInDisplayCutoutMode =
+                WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+        }
         binding.btnCreate.setOnClickListener {
             val intent = Intent(this@MainActivity, CreatingAccountActivity::class.java)
             startActivity(intent)

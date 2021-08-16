@@ -37,12 +37,12 @@ Let's just create a profile and sign in to it.
 
 ![Screen_Recording_(16 08 2021_21-30-56)](https://user-images.githubusercontent.com/67463538/129604835-6f23030f-3b80-4879-9e7e-3025a75b9f50.gif)
 
-# How it looks in the database?
+## How it looks in the database?
 
 ![Снимок](https://user-images.githubusercontent.com/67463538/129611576-9eef1e6f-4dc0-44ed-a353-b20322412152.PNG)
 
 
-# Contacts
+## Contacts
 
 For questions or smth else you can write: Telegram - [@AiratKhayrullov]
 

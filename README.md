@@ -28,7 +28,6 @@ For more information you can check our:
 [Whole project with these algs, instructions, etc.]:
   https://drive.google.com/drive/folders/1DHeM3WEtFKFB4wesMxtazaaZqIrRbQsP?usp=sharing
 
-
 ## For what? For why? What next?
 - The topic "Cellular automata" isn't completely researched nowadays. It might be helpful to next researchings.
 - This system isn't safe but someone can enhance this system. We just show basic things that can we do with "Cellular automata"
@@ -37,6 +36,10 @@ For more information you can check our:
 Let's just create a profile and sign in to it.
 
 ![Screen_Recording_(16 08 2021_21-30-56)](https://user-images.githubusercontent.com/67463538/129604835-6f23030f-3b80-4879-9e7e-3025a75b9f50.gif)
+
+# How it looks in the database?
+
+![Снимок](https://user-images.githubusercontent.com/67463538/129611576-9eef1e6f-4dc0-44ed-a353-b20322412152.PNG)
 
 
 # Contacts

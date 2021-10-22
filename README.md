@@ -3,13 +3,16 @@ An example of using "Cellular automata" in real life
 ## Authors
 - [Khayrullov Airat] - Developing the mobile application
 - [Murodov Akhmad] - Developing the algorithms and enhancing already existing algorithms. Rewriting the algorithms from Java to Kotlin.
-- Ivan Cvetkov - Rewriting the algorithms from Python to Java. Enhancing the algorithms
+- [Ivan Cvetkov] - Rewriting the algorithms from Python to Java. Enhancing the algorithms
 
 [Khayrullov Airat]:
   https://github.com/AiratKhayrullov
 
 [Murodov Akhmad]:
   https://github.com/Ahmad-koder
+  
+[Ivan Cvetkov]:
+  https://github.com/tsvetkovivan
   
 ## Description
 This app was developed for a Mathematical Logic and Algorithm Theory Alternative Exam in the second year of study. 

@@ -1,9 +1,9 @@
 # AuthApp
 An example of using "Cellular automata" in real life
 ## Authors
-- [Khayrullov Airat] - Developing the mobile application
+- [Khayrullov Airat] - Developing the mobile application/
 - [Murodov Akhmad] - Developing the algorithms and enhancing already existing algorithms. Rewriting the algorithms from Java to Kotlin.
-- [Ivan Cvetkov] - Rewriting the algorithms from Python to Java. Enhancing the algorithms
+- [Ivan Cvetkov] - Rewriting the algorithms from Python to Java. Enhancing the algorithms. Supporting in developing the mobile application.
 
 [Khayrullov Airat]:
   https://github.com/AiratKhayrullov
